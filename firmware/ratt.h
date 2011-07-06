@@ -29,12 +29,13 @@
 
 #ifdef MULTICHRONA
 //MultiCronA Mix:
-#define GPSENABLE 1
-#define INTRUDERCHRON 1
+//#define GPSENABLE 1
+//#define INTRUDERCHRON 1
 #define SEVENCHRON 1
 #define RATTCHRON 1
 #define XDALICHRON 1
-#define TSCHRON 1
+//#define TSCHRON 1
+#define ANALOGCHRON 1
 #else
 //MultiCronB DeathChron Mix:
 #define GPSENABLE 1
@@ -285,6 +286,9 @@ enum {
 	STYLE_BASE = 209,
 #ifdef INTRUDERCHRON
 	STYLE_INT,
+#endif
+#ifdef ANALOGCHRON
+    STYLE_ANALOG,
 #endif
 #ifdef SEVENCHRON
 	STYLE_SEV,
