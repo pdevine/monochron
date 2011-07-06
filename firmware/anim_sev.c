@@ -152,8 +152,8 @@ void drawdisplay_sev(uint8_t inverted) {
     }
     else if (score_mode == SCORE_MODE_DATELONG_DAY)
     {
-        draw7seg_sev(DISPLAY_H10_X_SEV, DISPLAY_TIME_Y_SEV, 0x00 , inverted);
-        draw7seg_sev(DISPLAY_H1_X_SEV, DISPLAY_TIME_Y_SEV, 0x00 , inverted);
+        draw7seg_sev(DISPLAY_H10_X_SEV, DISPLAY_TIME_Y_SEV, 0x00, inverted);
+        draw7seg_sev(DISPLAY_H1_X_SEV, DISPLAY_TIME_Y_SEV, 0x00, inverted);
         drawdigit_sev(
             DISPLAY_M10_X_SEV,
             DISPLAY_TIME_Y_SEV,
