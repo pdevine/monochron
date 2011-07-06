@@ -38,6 +38,10 @@ void initanim(void){
  case STYLE_INT: initanim_int();
 				break;
 #endif
+#ifdef ANALOGCHRON
+ case STYLE_ANALOG: initanim_analog();
+                break;
+#endif
 #ifdef SEVENCHRON
  case STYLE_SEV: initanim_sev();
 				break;
@@ -79,6 +83,10 @@ void initdisplay(uint8_t inverted) {
  case STYLE_INT: initdisplay_int(inverted);
 				break;
 #endif
+#ifdef ANALOGCHRON
+ case STYLE_ANALOG: initdisplay_analog(inverted);
+                break;
+#endif
 #ifdef SEVENCHRON
  case STYLE_SEV: initdisplay_sev(inverted); 
 				break;
@@ -118,6 +126,10 @@ void drawdisplay(uint8_t inverted) {
  case STYLE_INT: drawdisplay_int(inverted);
 				break;
 #endif
+#ifdef ANALOGCHRON
+ case STYLE_ANALOG: drawdisplay_analog(inverted);
+                break;
+#endif
 #ifdef SEVENCHRON
  case STYLE_SEV: drawdisplay_sev(inverted); 
  				break;
@@ -146,6 +158,10 @@ void step(void) {
 #ifdef INTRUDERCHRON
  case STYLE_INT: step_int();
 				break;
+#endif
+#ifdef ANALOGCHRON
+ case STYLE_ANALOG: step_analog();
+                break;
 #endif
 #ifdef SEVENCHRON
  case STYLE_SEV: step_sev(); 

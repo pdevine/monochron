@@ -68,8 +68,8 @@ void glcdSetDot(u08 x, u08 y);
 //! clear a dot on the display (x is horiz 0:127, y is vert 0:63)
 void glcdClearDot(u08 x, u08 y);
 
-//! draw line
-void glcdLine(u08 x1, u08 y1, u08 x2, u08 y2);
+// draw line
+void glcdLine(u08 x1, u08 y1, u08 x2, u08 y2, u08 color);
 
 //! draw rectangle (coords????)
 void glcdRectangle(u08 x, u08 y, u08 a, u08 b);

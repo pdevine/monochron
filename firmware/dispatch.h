@@ -7,24 +7,28 @@ void step(void);
 
 void initanim_rat(void);
 void initanim_int(void);
+void initanim_analog(void);
 void initanim_sev(void);
 void initanim_xda(void);
 void initanim_death(void);
 
 void initdisplay_rat(uint8_t);
 void initdisplay_int(uint8_t);
+void initdisplay_analog(uint8_t);
 void initdisplay_sev(uint8_t);
 void initdisplay_xda(uint8_t);
 void initdisplay_death(uint8_t);
 
 void drawdisplay_rat(uint8_t);
 void drawdisplay_int(uint8_t);
+void drawdisplay_analog(uint8_t);
 void drawdisplay_sev(uint8_t);
 void drawdisplay_xda(uint8_t);
 void drawdisplay_death(uint8_t);
 
 void step_rat(void);
 void step_int(void);
+void step_analog(void);
 void step_sev(void);
 void step_xda(void);
 void step_death(void);
